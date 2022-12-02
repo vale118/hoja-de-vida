@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="cv3.css">
+</head>
+<body>
+    <br>
+    <div class="col-md-offset-3 col-md-6" style="background: #E4E5E9" id="wrapper">
+        <form method="post" id="registro">
+
+            <div id="header">
+                <div>
+                    <img src="hoja.jpg" id="imagen">
+                </div>
+                <div>
+                    <h2 id="name">HOJA DE VIDA</h2>
+                    <p id="linea"></p>
+                    <h5 id="profesion">Hoja de Vida Profesional</h5>
+                </div>
+            </div><!--End header-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 id="experiencia">DATOS PERSONALES</h4>
+                    <div id="experiencia1">
+                        <div id="exp1">
+                            <div>
+                                <img src="square.png" id="imagen2">
+                            </div>
+                            <div>
+                                <label  for="nombres ">Nombres</label>
+                                <input   class="form-control" type="text" name="nombres" id="nombres" required>
+                            </div>
+                            <div>
+                                <label id="apellido" for="nombres ">Apellidos</label>
+                                <input  class="form-control" type="text" name="apellidos" id="apellidos" required>
+                            </div>
+                        </div><!--End exp1-->
+                        <br>
+                        <div id="exp1">
+                            <div>
+                                <img src="square.png" id="imagen2">
+                            </div>
+                            <div>
+                                <label for="nombres ">Fecha de Nacimiento</label>
+                                <input   class="form-control" type="text" name="fecha_nac" id="fecha_nac" required>
+                            </div>
+                            <div>
+                                <label id="iden" for="nombres ">Nùmero de Identificaciòn</label>
+                                <input   class="form-control" type="text" name="identificacion" id="identificacion" required>
+                            </div>
+                        </div><!--End exp2-->
+            
+                    </div>
+                </div>
+            </div><!--End row1-->
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 id="experiencia">EDUCACIÓN</h4>
+                    <div id="experiencia1">
+                        <div id="exp1">
+                            <div>
+                                <img src="square.png" id="imagen2">
+                            </div>
+                            <div>
+                                <label for="destino">Profesión</label>
+                                <br>
+                                <select class="form-control" name="profesion" required>
+                                    <option selected disabled>Seleccione</option>
+                                    <option value="1">Ingeniero de sistemas</option>
+                                    <option value="2">Ingeniero civil</option>
+                                    <option value="4">Ingeniero Electronico</option>
+                                    <option value="5">Ingeniero industrial</option>
+                                    <option value="6">Ingeniero agroindustial</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label id="especi" for="nombres ">Especializaciòn</label>
+                                <input   class="form-control" type="text" name="especializacion" id="especializacion" required>
+                            </div>
+                        </div><!--End exp1-->
+                        <br>
+                        <div id="exp1">
+                            <div>
+                                <img src="square.png" id="imagen2">
+                            </div>
+                            <div>
+                                <label>Estudios de maestria</label>
+                                <div>
+                                    <label>
+                                        <input  required type="radio" name="universitario" value="1">
+                                        <span>Si</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input required type="radio" name="universitario" value="0">
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div>
+                                <label id="doctorado">Estudios de Doctorado</label>
+                                <div>
+                                    <label id="si">
+                                        <input  required type="radio" name="universitario" value="1">
+                                        <span>Si</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label id="si">
+                                        <input required type="radio" name="universitario" value="0">
+                                        <span>No</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div><!--End exp2-->
+                    </div>
+                </div>
+            </div><!--End row2-->
+            <div class="row">
+                <div class="col-md-5">
+                    <h4 id="contactos">PROGRAMACIÒN</h4>
+    
+                    <div>
+                        <label id="lenguajes" for="destino">JAVA</label>
+                        <select class="form-control" name="habilidades" id="habilidades" required>
+                            <option selected disabled>Seleccione</option>
+                            <option value="1">Muy Buena</option>
+                            <option value="2">Buena</option>
+                            <option value="4">Mala</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label id="lenguajes" for="destino">PYTHON</label>
+                        <br>
+                        <select class="form-control" name="habilidades" id="habilidades" required>
+                            <option selected disabled>Seleccione</option>
+                            <option value="1">Muy buena</option>
+                            <option value="2">Buena</option>
+                            <option value="4">Mala</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label id="lenguajes" for="destino">ANGULAR</label>
+                        <br>
+                        <select class="form-control" name="habilidades" id="habilidades" required>
+                            <option selected disabled>Seleccione</option>
+                            <option value="1">Muy buena</option>
+                            <option value="2">buena</option>
+                            <option value="4">Mala</option>
+                        </select>
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-md-7">
+                    <h4 id="contactos">CONTACTOS</h4>
+                    <div class="habilidades">
+                        <div>
+                            <div>
+                                <img src="direccion.png" id="imagen3">
+                                <span id="espacio">Cra 4ta No 12F-49 El Pilar-Pasto</span>
+                            </div>
+                        </div><!--End home-->
+                        <br>
+                        <div>
+                            <div>
+                                <img src="contacto.png" id="imagen3">
+                                <span id="espacio"><a href="#">0123-456-789</a></span>
+                            </div>
+                        </div><!--End telephone-->
+                        <br>
+                        <div>
+                            <div>
+                                <img src="correo.png" id="imagen3">
+                                <span id="espacio"><a href="@">trabajo123@gmail.com</a></span>
+                            </div>
+                        </div><!--End email-->
+                        <br>
+                        <div> 
+                            <button type="submit" class="btn waves-effect btn-primary" id="boton">
+                            <i class="material-icons right"></i>
+                                Guardar
+                            </button> 
+                        </div>
+                        
+    
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        
+        
+    </div>
+    
+</body>
+</html>
